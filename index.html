@@ -1,11 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portfolio</h1>
+
+    <!-- Navigaatio -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Portfolio</a>
+
+            <div class="nav-links">
+                <a href="#about">Minusta</a>
+                <a href="#skills">Taidot</a>
+                <a href="#projects">Projektit</a>
+                <a href="#contact">Yhteystiedot</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Esittely -->
+        <section id="about" class="hero">
+
+            <div class="hero-text">
+                <p class="intro">Hei, olen</p>
+
+                <h1>Eerikki Esimerkki</h1>
+
+                <h2>Ohjelmistokehittäjä</h2>
+
+                <p>
+                    Olen kiinnostunut ohjelmistokehityksestä ja web-teknologioista. Nautin erityisesti käyttöliittymien suunnittelusta ja
+                    toimivien verkkosovellusten rakentamisesta.
+                </p>
+
+                <p>
+                    Tavoitteenani on kehittää osaamistani jatkuvasti ja päästä tulevaisuudessa
+                    työskentelemään mielenkiintoisten ohjelmistoprojektien parissa. Haen harjoittelupaikkaa syksyllä 2026.
+                </p>
+
+                <a href="#projects" class="button">
+                    Tutustu projekteihini
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profiilikuva.png" alt="Eerikki Esimerkki">
+            </div>
+
+        </section>
+
+
+        <!-- Taidot -->
+        <section id="skills" class="section">
+
+            <h2>Osaaminen</h2>
+
+            <p class="section-intro">
+                Tässä tärkeimpiä teknologioita ja työkaluja, joita olen käyttänyt.
+            </p>
+
+            <div class="skills">
+
+                <div class="skill">
+                    <h3>Web-kehitys</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Backend</h3>
+                    <p>PHP, Node.js, Express, REST API</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Tietokannat</h3>
+                    <p>MySQL, SQL</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Työkalut</h3>
+                    <p>Git, GitHub, VS Code, cPanel</p>
+                </div>
+
+                <div class="skill">
+                    <h3>Pelikehitys</h3>
+                    <p>Unity3D, Blender</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Projektit -->
+        <section id="projects" class="section projects-section">
+
+            <h2>Projektit</h2>
+
+            <p class="section-intro">
+                Esimerkkejä tekemistäni projekteista.
+            </p>
+
+
+            <div class="projects">
+
+                <!-- Projekti 1 -->
+                <div class="project">
+                    <h3>Notes-demo</h3>   
+               
+                    <img class="project_image" src="images/project_notes.png" alt="Notes-demo">
+                    <div class="project-content">
+
+                           
+                        <p>
+                           Tämä on pieni React-sovellus jossa MySQL-backend. Käyttäjä voi rekisteröityä ja hallita muistiinpanojaan.
+                        </p>
+                 
+
+                        <p class="technologies">
+                            <strong>Teknologiat:</strong>
+                            React, CSS
+                        </p>
+
+                        <a href="https://notestest.eermau.treok.io/" target="_blank">Katso projekti →</a>
+
+                    </div>
+                </div>
+
+
+                <!-- Projekti 2 -->
+                <div class="project">
+                    <h3>Taitaja 2024 semifinaali</h3>
+
+                    <img src="images/project_taitaja.png" alt="Projektin 2 esittelykuva">
+
+                    <div class="project-content">
+
+
+                        <p>
+                            Taitaja semifinaalityö vuodelta 2024. Aiheena oli lähiruokaa tarjoava verkkokauppa. Tässä valmiina annettu ohjeistus sekä ulkoasusuunnitelma jota tuli noudattaa.
+                        </p>
+
+                        <p class="technologies">
+                            <strong>Teknologiat:</strong>
+                            PHP, JavaScript ja MySQL
+                        </p>
+
+                        <a href="https://esimerkki.eermau.treok.io/" target="_blank">
+                            Katso projekti →
+                        </a>
+
+                    </div>
+                </div>
+
+
+             
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Yhteystiedot -->
+        <section id="contact" class="contact">
+
+            <div class="contact-content">
+
+                <div>
+                    <p class="intro">Ota yhteyttä</p>
+
+                    <h2>Yhteystiedot</h2>
+
+                    <p>
+                        Jos haluat tietää lisää osaamisestani tai projekteistani,
+                        voit ottaa minuun yhteyttä.
+                    </p>
+
+                    <p>
+                        <strong>Nimi:</strong> Eerikki Esimerkki
+                    </p>
+
+                    <p>
+                        <strong>Sähköposti:</strong>
+                        <a href="mailto:etunimi.sukunimi@example.com">
+                            eerikki.esimerkki@example.com
+                        </a>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Eerikki Esimerkki</p>
+    </footer>
+
 </body>
 </html>
+```
