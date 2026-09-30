@@ -3,213 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio</title>
+    <meta name="description" content="Oma portfoliosivuni">
+    <title>Portfolio | Eerikki Esimerkki</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigaatio -->
-    <header>
+    <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo">Portfolio</a>
+            <a href="#etusivu" class="logo">Portfolio</a>
 
-            <div class="nav-links">
-                <a href="#about">Minusta</a>
-                <a href="#skills">Taidot</a>
-                <a href="#projects">Projektit</a>
-                <a href="#contact">Yhteystiedot</a>
-            </div>
+            <ul class="nav-links">
+                <li><a href="#minusta">Minusta</a></li>
+                <li><a href="#taidot">Taidot</a></li>
+                <li><a href="#projektit">Projektit</a></li>
+                <li><a href="#yhteystiedot">Yhteystiedot</a></li>
+            </ul>
         </nav>
     </header>
 
-
     <main>
 
-        <!-- Esittely -->
-        <section id="about" class="hero">
-
-            <div class="hero-text">
-                <p class="intro">Hei, olen</p>
-
-                <h1>Eerikki Esimerkki</h1>
-
-                <h2>Ohjelmistokehittäjä</h2>
-
+        <!-- Etusivu -->
+        <section id="etusivu" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Tervetuloa portfoliooni</p>
+                <h1>Hei, olen <span>Eerikki Esimerkki</span></h1>
                 <p>
-                    Olen kiinnostunut ohjelmistokehityksestä ja web-teknologioista. Nautin erityisesti käyttöliittymien suunnittelusta ja
-                    toimivien verkkosovellusten rakentamisesta.
+                    opiskelen ohjelmistokehitystä ja tällä sivulla esittelen tekemiäni töitä.
                 </p>
 
-                <p>
-                    Tavoitteenani on kehittää osaamistani jatkuvasti ja päästä tulevaisuudessa
-                    työskentelemään mielenkiintoisten ohjelmistoprojektien parissa. Haen harjoittelupaikkaa syksyllä 2026.
-                </p>
-
-                <a href="#projects" class="button">
-                    Tutustu projekteihini
-                </a>
+                <a href="#projektit" class="button">Tutustu projekteihini</a>
             </div>
+        </section>
 
-            <div class="hero-image">
-                <img src="images/profiilikuva.png" alt="Eerikki Esimerkki">
+
+        <!-- Minusta -->
+        <section id="minusta" class="section">
+            <div class="container">
+                <p class="section-label">01 — Minusta</p>
+                <h2>Minusta</h2>
+
+                <div class="about-content">
+                    <div>
+                        <p>
+                            Olen web-kehityksestä kiinnostunut opiskelija. Nautin
+                            verkkosivujen ja sovellusten suunnittelusta,
+                            rakentamisesta sekä uusien teknologioiden
+                            oppimisesta.
+                        </p>
+                    </div>
+                </div>
             </div>
-
         </section>
 
 
         <!-- Taidot -->
-        <section id="skills" class="section">
+        <section id="taidot" class="section section-light">
+            <div class="container">
+                <p class="section-label">02 — Osaaminen</p>
+                <h2>Taidot</h2>
 
-            <h2>Osaaminen</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <span class="skill-number">01</span>
+                        <h3>HTML & CSS</h3>
+                        <p>Responsiivisten ja visuaalisesti tyylikkäiden käyttöliittymien toteuttaminen.</p>
+                    </div>
 
-            <p class="section-intro">
-                Tässä tärkeimpiä teknologioita ja työkaluja, joita olen käyttänyt.
-            </p>
+                    <div class="skill-card">
+                        <span class="skill-number">02</span>
+                        <h3>React</h3>
+                        <p>Interaktiivisten käyttöliittymien ja verkkosovellusten kehittäminen.</p>
+                    </div>
 
-            <div class="skills">
+                    <div class="skill-card">
+                        <span class="skill-number">03</span>
+                        <h3>PHP</h3>
+                        <p>Dynaamisten verkkosivujen ja palvelinpuolen toimintojen toteuttaminen.</p>
+                    </div>
 
-                <div class="skill">
-                    <h3>Web-kehitys</h3>
-                    <p>HTML, CSS, JavaScript, React</p>
-                </div>
+                    <div class="skill-card">
+                        <span class="skill-number">04</span>
+                        <h3>SQL</h3>
+                        <p>Tietokantojen suunnittelu, kyselyt ja tietojen käsittely.</p>
+                    </div>
 
-                <div class="skill">
-                    <h3>Backend</h3>
-                    <p>PHP, Node.js, Express, REST API</p>
-                </div>
-
-                <div class="skill">
-                    <h3>Tietokannat</h3>
-                    <p>MySQL, SQL</p>
-                </div>
-
-                <div class="skill">
-                    <h3>Työkalut</h3>
-                    <p>Git, GitHub, VS Code, cPanel</p>
-                </div>
-
-                <div class="skill">
-                    <h3>Pelikehitys</h3>
-                    <p>Unity3D, Blender</p>
+                    <div class="skill-card">
+                        <span class="skill-number">05</span>
+                        <h3>WordPress</h3>
+                        <p>WordPress-sivustojen rakentaminen, muokkaaminen ja ylläpito.</p>
+                    </div>
                 </div>
             </div>
-
         </section>
 
 
         <!-- Projektit -->
-        <section id="projects" class="section projects-section">
+        <section id="projektit" class="section">
+            <div class="container">
+                <p class="section-label">03 — Työt</p>
+                <h2>Töitäni</h2>
 
-            <h2>Projektit</h2>
+                <div class="projects-grid">
 
-            <p class="section-intro">
-                Esimerkkejä tekemistäni projekteista.
-            </p>
+                    <!-- Projekti 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project_taitaja.png" alt="Projektin 1 kuva">
+                        </div>
+
+                        <div class="project-content">
+                            <span class="project-number">01</span>
+                            <h3>Taitaja-semifinaali (2024)</h3>
+
+                            <p>
+                                Taitaja semifinaalityö vuodelta 2024. Aiheena oli lähiruokaa tarjoava verkkokauppa. Tässä valmiina annettu ohjeistus sekä ulkoasusuunnitelma jota tuli noudattaa.
+                            </p>
+    
+                            <p class="technologies">
+                                <strong>Teknologiat:</strong>
+                                PHP, JavaScript ja MySQL
+                            </p>
+                            <a href="https://esimerkki.eermau.treok.io/" class="project-link" target="_blank">
+                                Katso projekti →
+                            </a>
+                        </div>
+                    </article>
 
 
-            <div class="projects">
+                    <!-- Projekti 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project_notes.png" alt="Notes-demo">
+                        </div>
 
-                <!-- Projekti 1 -->
-                <div class="project">
-                    <h3>Notes-demo (2025)</h3>   
-               
-                    <img class="project_image" src="images/project_notes.png" alt="Notes-demo">
-                    <div class="project-content">
+                        <div class="project-content">
+                            <span class="project-number">02</span>
+                            <h3>Notes-demo (2026)</h3>
 
-                           
-                        <p>
-                           Tämä on pieni React-sovellus jossa MySQL-backend. Käyttäjä voi rekisteröityä ja hallita muistiinpanojaan.
-                        </p>
-                 
+                            <p>
+                                Tämä on pieni React-sovellus jossa PHP-backend. Käyttäjä voi rekisteröityä ja hallita muistiinpanojaan.
+                             </p>
+                             <p class="technologies">
+                                <strong>Teknologiat:</strong>
+                                React, PHP, MySQL
+                            </p>
 
-                        <p class="technologies">
-                            <strong>Teknologiat:</strong>
-                            React, CSS
-                        </p>
+                            <a href="https://notestest.eermau.treok.io/" class="project-link" target="_blank">
+                                Katso projekti →
+                            </a>
+                        </div>
+                    </article>
 
-                        <a href="https://notestest.eermau.treok.io/" target="_blank">Katso projekti →</a>
 
-                    </div>
+
                 </div>
-
-
-                <!-- Projekti 2 -->
-                <div class="project">
-                    <h3>Taitaja-semifinaali (2024)</h3>
-
-                    <img src="images/project_taitaja.png" alt="Projektin 2 esittelykuva">
-
-                    <div class="project-content">
-
-
-                        <p>
-                            Taitaja semifinaalityö vuodelta 2024. Aiheena oli lähiruokaa tarjoava verkkokauppa. Tässä valmiina annettu ohjeistus sekä ulkoasusuunnitelma jota tuli noudattaa.
-                        </p>
-
-                        <p class="technologies">
-                            <strong>Teknologiat:</strong>
-                            PHP, JavaScript ja MySQL
-                        </p>
-
-                        <a href="https://esimerkki.eermau.treok.io/" target="_blank">
-                            Katso projekti →
-                        </a>
-
-                    </div>
-                </div>
-
-
-             
-                </div>
-
             </div>
-
         </section>
 
 
         <!-- Yhteystiedot -->
-        <section id="contact" class="contact">
+        <section id="yhteystiedot" class="section contact-section">
+            <div class="container">
+                <p class="section-label">04 — Ota yhteyttä</p>
+                <h2>Yhteystiedot</h2>
 
-            <div class="contact-content">
+                <div class="contact-content">
+                    <div class="contact-item">
+                        <span>Nimi</span>
+                        <strong>Eerikki Esimerkki</strong>
+                    </div>
 
-                <div>
-                    <p class="intro">Ota yhteyttä</p>
-
-                    <h2>Yhteystiedot</h2>
-
-                    <p>
-                        Jos haluat tietää lisää osaamisestani tai projekteistani,
-                        voit ottaa minuun yhteyttä.
-                    </p>
-
-                    <p>
-                        <strong>Nimi:</strong> Eerikki Esimerkki
-                    </p>
-
-                    <p>
-                        <strong>Sähköposti:</strong>
-                        <a href="mailto:etunimi.sukunimi@example.com">
-                            eerikki.esimerkki@example.com
+                    <div class="contact-item">
+                        <span>Sähköposti</span>
+                        <a href="mailto:eerikki@email.com">
+                            eerikki@email.com
                         </a>
-                    </p>
-
+                    </div>
                 </div>
-
-
             </div>
-
         </section>
 
     </main>
 
 
     <!-- Footer -->
-    <footer>
-        <p>© 2026 Eerikki Esimerkki</p>
+    <footer class="footer">
+        <p>© 2026 Eerikki Esimerkki. Kaikki oikeudet pidätetään.</p>
     </footer>
 
 </body>
 </html>
-```
